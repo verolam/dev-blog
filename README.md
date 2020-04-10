@@ -1,19 +1,39 @@
-# This is page of what I learn
+# My Dev-blog
+
+My blog will contain information about myself and different posts.
+
+========================================
 
 ## Day 04/08/2020
-----
-1. CLI
-2. Markdown [https://www.markdownguide.org/]() 
 
- 
-3. Workshop 
+1. CLI [Link to CLI ](https://github.com/powercoders-lausanne/support/tree/master/CLI)
+2. Markdown [Link to Markdown](https://www.markdownguide.org/) 
+3. Workshop [Link to my Workshop](https://github.com/verolam/workshop)
 
 
 ### THINGS TO DO 
-- [ ] Create shortcuts to Apps
-- [ ] 2
-- [ ] 3
+
+#### Create shortcuts to Apps
+----------------------------------
+
+- [ ] Choose a template
+- [ ] Create in Dev-blog 
+    - index.html
+    - about.html
+    - _post-template.html 
   
 
-  ![A pic](https://tse4.mm.bing.net/th?id=OIP.CZwyiXqak5yc3C7Est9IIwHaE8&pid=Api&P=0&w=254&h=171)
+  - list 
+    - 1 
+    - 2
+    - 3
+
+## Links
+
+
+[This is a link to  CLI](https://github.com/powercoders-lausanne/support/tree/master/CLI)
+
+
+## Image
+![ This is an image](assets/img/barcelone.jpg)
 
