@@ -5,46 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog de Véronique Lamrani</title>
 
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="/assets/css/style.css"> 
 
 </head>
 
 <body>
   <aside>
-      <h2> Véronique's blog</h2>
-      <img src="/assets/img/vero.jpg" width="100px" height="20px" alt="">
-      <figcaption> Hello, My name is Véronique 
-      and I am very pleased you reached my page. 
-      You can find more information about me 
-       <p><a href="about.html">Read more...</a></p>
-      </figcaption>
+    <header> 
+      <h1>Welcome to My blog</h1>
+      <figure> 
+        <img src="/assets/img/vero.jpg" width="300px" height="200px" alt="">
+        <figcaption> 
+          Hello, My name is Véronique 
+        </figcaption>
+      </figure>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="/posts/_post-template.html">Posts</a></li>
+      </ul>
+    </nav>
+
+    <h3>If you want to be aware of new posts, enter your email</h3>  
+    <form action="">
+      <input = "text" placeholder ="Enter your email">
+      <button type="button" class ="button" >Subscribe</button>
+     </form>
   </aside>
-  <main>
 
-  <header>
-      <h1> Dev blog : A blog made for Developpers </h1>
-      <h2>Welcome to my blog. Subscribe and get my latest blog post in your inbox.
-      </h2>
+<main>
+<section>
+  <h1>
+  <a href="/posts/post_template.html">Markdown syntax post</a></br>
+  </h1>
+   <small>Date of publication : 04/07/2020</small> 
+  <p>Sample article introducing basic Markdown syntax and formatting HTML</p>
+   <a href="/posts/post_template.html">Read More</a> 
+</section>
+  
+<section>
+  <h1>
+  <a href="/Posts/post_cli.html">Cli Syntax post</a></br>
+  </h1>
+  <small>Date of publication : 04/06/2020</small> 
+  <p>Sample article introducing basic CLI syntax</p>
+  <a href="/Posts/post_cli.html">Read More</a> 
+ </section>
+        
 
-  <form action="">
-        <input = "text" placeholder ="Enter your email">
-        <button type="button" class ="button" ></button>
-  </form>
-           
-  </header>
 
-   <section> 
-      <figure>
-        <img src= '' alt="">        
-      </figure>
-      <h2>Why every developer should have a blog</h2>     
-      <h3> blablalbllllllll</h3>   
-      </figure>
-
-   </section>
    
- 
-
   </main>
 </body>
 </html>

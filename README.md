@@ -11,29 +11,38 @@ My blog will contain information about myself and different posts.
 3. Workshop [Link to my Workshop](https://github.com/verolam/workshop)
 
 
-### THINGS TO DO 
+### HEADINGS
 
-#### Create shortcuts to Apps
-----------------------------------
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+
+###  UNORDERED LIST
+
+- elt1
+- elt2
+- elt3
+
+###  CHECKBOXES 
 
 - [ ] Choose a template
 - [ ] Create in Dev-blog 
-    - index.html
-    - about.html
-    - _post-template.html 
-  
+     
+  Pour valider un choix il suffit de mettre "X" dans [ ]
 
-  - list 
-    - 1 
-    - 2
-    - 3
 
-## Links
-
+### LINKS
 
 [This is a link to  CLI](https://github.com/powercoders-lausanne/support/tree/master/CLI)
 
 
-## Image
+### Image
+
+To insert an image :
+
 ![ This is an image](assets/img/barcelone.jpg)
 

@@ -9,8 +9,31 @@ html {
   box-sizing: border-box;
 }
 
-/* #endregion */
 
+/* LINKS */
+a{
+  text-decoration: none;
+  color: indigo;
+  transition: color 1s;
+ }
+
+a:hover{
+  color: aqua !important;
+}
+
+
+/* FORM ELEMENTS */
+input{
+  border: none;
+}
+
+
+/* TITLES */
+h1,h2,h3{
+  font-weight: bold;
+}
+
+/* #endregion */
 
 
 
@@ -22,27 +45,35 @@ html{
 }
 
 body {
+  font-size:1rem;
   line-height: 1.5;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-family: courrier, sans-serif;
 }
 
 ol, ul {
 	list-style: none;
 }
 
+img{
+  width: 600px;
+  height:400px;
+}
 
-
+p{
+  font-weight: 1em;
+  ;
+}
 
 /* HELPER CLASSES
 =================================*/
 
 
 
-
-
 /* LAYOUT 
 =================================*/
+
+
+
 
 /* MEDIA QUERRIES
 =================================*/
