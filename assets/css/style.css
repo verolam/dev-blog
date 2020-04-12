@@ -29,7 +29,7 @@ input{
 
 
 /* TITLES */
-h1,h2,h3{
+h1,h2{
   font-weight: bold;
 }
 
@@ -54,9 +54,13 @@ ol, ul {
 	list-style: none;
 }
 
+h1{
+  font-size: x-large;
+}
+
 img{
-  width: 600px;
-  height:400px;
+  width: 400px;
+  height: 300px;
 }
 
 p{
