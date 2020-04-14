@@ -81,7 +81,7 @@ p {
 /* Typography *
 ------------------*/
 .bold {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .line-h-1 {
@@ -92,9 +92,15 @@ p {
   line-height: 1.5;
 }
 
+/* Colors *
+------------------*/
 .blue {
-  color:blue
+  color:#49757a;
 }
+
+.blue-H1 {
+  color: #0f727d;
+  }
 
 .fs-1 {
   font: size 1rem;
@@ -102,6 +108,19 @@ p {
 
 .fs-2 {
   font: size 1.2rem;
+}
+
+
+/* IMAGES *
+------------------*/
+.img-head {
+  height: 180px;
+  width: 180px;
+  border: 6px solid #fff;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 
@@ -119,7 +138,6 @@ p {
   margin-top: 1.5rem;
   }
   
-
 .m-b-1 {
   margin-top: 1rem;
 }
@@ -142,11 +160,17 @@ p {
 
 /* FLEX *
 ------------------*/
+.flex {
+display: flex;
+flex-direction: column;
+}
 
 
 /* BACKGROUNDS *
 ------------------*/
-
+.background{
+  background-color: cadetblue;
+}
 
 
 
