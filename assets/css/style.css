@@ -11,25 +11,25 @@ html {
 
 
 /* LINKS */
-a{
+a {
   text-decoration: none;
   color: indigo;
   transition: color 1s;
  }
 
-a:hover{
+a:hover {
   color: aqua !important;
 }
 
 
 /* FORM ELEMENTS */
-input{
+input {
   border: none;
 }
 
 
 /* TITLES */
-h1,h2{
+h1,h2 {
   font-weight: bold;
 }
 
@@ -40,40 +40,113 @@ h1,h2{
 
 /* BASIC FORMATTING
 =================================*/
-html{
+html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size:1rem;
   line-height: 1.5;
   font-family: courrier, sans-serif;
+  color: #212121;
 }
 
 ol, ul {
 	list-style: none;
 }
 
-h1{
+h1 {
   font-size: x-large;
 }
 
-h2{
+h2 {
   font-size: large;
 }
 
-img{
+img {
   width: 400px;
   height: 300px;
 }
 
-p{
+p {
   font-weight: 1em;
   ;
 }
 
+
 /* HELPER CLASSES
 =================================*/
+
+/* Typography *
+------------------*/
+.bold {
+  font-weight:bold;
+}
+
+.line-h-1 {
+  line-height: 1;
+}
+
+.line-h-1p5 {
+  line-height: 1.5;
+}
+
+.blue {
+  color:blue
+}
+
+.fs-1 {
+  font: size 1rem;
+}
+
+.fs-2 {
+  font: size 1.2rem;
+}
+
+
+/* MARGINS *
+------------------*/
+.m-t-1 {
+  margin-top: 1rem;
+  }
+  
+  .m-t-2 {
+  margin-top: 1.25rem;
+  }
+  
+  .m-t-3 {
+  margin-top: 1.5rem;
+  }
+  
+
+.m-b-1 {
+  margin-top: 1rem;
+}
+
+.m-b-2 {
+  margin-top: 1.25rem;
+}
+
+.m-b-3 {
+  margin-top: 1.5rem;
+}
+
+
+/* PADDINGS *
+------------------*/
+.p-t-1{
+  padding-top: 1rem;
+}
+
+
+/* FLEX *
+------------------*/
+
+
+/* BACKGROUNDS *
+------------------*/
+
 
 
 

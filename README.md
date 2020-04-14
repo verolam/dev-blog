@@ -4,6 +4,9 @@ My blog will contain information about myself and different posts.
 
 ========================================
 
+Link to my blog :
+https://verolam.github.io/dev-blog/
+
 ## Day 04/08/2020
 
 1. CLI [Link to CLI ](https://github.com/powercoders-lausanne/support/tree/master/CLI)
