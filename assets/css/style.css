@@ -58,6 +58,7 @@ ol, ul {
 
 h1 {
   font-size: x-large;
+  text-align: center;
 }
 
 h2 {
@@ -160,16 +161,32 @@ p {
 
 /* FLEX *
 ------------------*/
-.flex {
+.box-container {
+background-color: grey;
 display: flex;
-flex-direction: column;
+flex-direction: row;
+width: 100%;
+height: 100% ;
 }
+
+.aside {
+  width: 20%;
+  text-align: center;
+}
+
+.main {
+  width: 80%;
+}
+
+/* TITLES *
+------------------*/
+
 
 
 /* BACKGROUNDS *
 ------------------*/
 .background{
-  background-color: cadetblue;
+ background: linear-gradient(90deg, #7e8184, #aeadb5, #bcb7b8 );
 }
 
 
