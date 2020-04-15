@@ -27,7 +27,8 @@
 
 .icon-heart:before {
   content: "\f004";
-}
+ }
+ 
 .icon-user:before {
   content: "\f007";
 }
