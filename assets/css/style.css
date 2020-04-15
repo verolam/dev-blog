@@ -48,12 +48,17 @@ html {
 body {
   font-size:1rem;
   line-height: 1.5;
-  font-family: courrier, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #212121;
 }
 
 ol, ul {
 	list-style: none;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Noto Serif', serif;
 }
 
 h1 {
@@ -115,9 +120,10 @@ p {
 /* IMAGES *
 ------------------*/
 .img-head {
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
   border: 6px solid #fff;
+  padding: 5px;
 }
 
 .img-circle {
@@ -157,6 +163,12 @@ p {
 .p-t-1{
   padding-top: 1rem;
 }
+
+.footer {
+  padding-top: 50px ;
+  text-align: center;
+}
+
 
 
 /* FLEX *
