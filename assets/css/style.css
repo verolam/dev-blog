@@ -49,11 +49,20 @@ body {
   font-size:1rem;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
-  
 }
 
+html, body {
+  min-height:100%;
+}
+
+body {
+  height:100%;
+}
+
+
+
 ol, ul {
-	list-style: none;
+	list-style: circle;
 }
 
 
@@ -70,15 +79,14 @@ h2 {
   font-size: large;
 }
 
-img {
-  width: 500px;
-  height: 400px;
-}
 
 p {
   font-weight: 1em;
   ;
 }
+
+
+
 
 
 /* HELPER CLASSES
@@ -165,11 +173,17 @@ p {
 }
 
 .footer {
-  padding-top: 50px ;
+  padding-top: 20px;
   text-align: center;
+ }
+
+.padding-left {
+  padding-left: 50px;
 }
 
-
+.section-about {
+  padding-top: 20px;
+}
 
 /* FLEX *
 ------------------*/
@@ -193,6 +207,7 @@ height: 100% ;
 .navbar-nav{
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .text-left {
@@ -202,7 +217,18 @@ height: 100% ;
 /* TITLES *
 ------------------*/
 
+/* IMAGES *
+------------------*/
 
+img-about {
+  width: 500px;
+  height: 400px;
+}
+
+.icon {
+  font-size: 30px;
+  text-align: left;
+}
 
 /* BACKGROUNDS *
 ------------------*/
@@ -214,6 +240,10 @@ height: 100% ;
 
 /* LAYOUT 
 =================================*/
+.icons-container i, a {
+	display: block;
+	margin: .2em 0;
+}
 
 
 
