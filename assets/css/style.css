@@ -96,7 +96,7 @@ td {
 
 img {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 
 }
 
@@ -165,8 +165,8 @@ ul {
 }
 
 img-about {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
 }
 
 .icon {
@@ -235,17 +235,6 @@ padding-right {
 }
 
 
-/* Flex *
-------------------*/
-.box-container {
-  background-color: grey;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100% ;
- 
-}
-
 .aside {
   width: 20%;
   text-align: center;
@@ -263,6 +252,9 @@ padding-right {
   text-align: left;
 }
 
+.footer {
+  text-align: center;
+}
 
 /* Buttons *
 ------------------*/
@@ -290,13 +282,24 @@ padding-right {
 
 /* LAYOUT 
 =================================*/
+
+.box-container {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100% ;
+}
+
+.box-container2 {
+  background-color: grey;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .icons-container i, a {
 	display: block;
 	margin: .2em 0;
-}
-
-.footer {
-  text-align: center;
 }
 
 
@@ -304,7 +307,6 @@ padding-right {
 
 /* MEDIA QUERRIES
 =================================*/
-
 
 @media ( max-width : 1024px) {
 body { background-color: cyan;
@@ -319,3 +321,5 @@ body {background-color: green;
 h1 {font-size:1rem;
   }
 }
+
+
