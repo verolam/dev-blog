@@ -165,8 +165,8 @@ ul {
 }
 
 img-about {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
 }
 
 .icon {
@@ -296,6 +296,24 @@ padding-right {
   display: flex;
   flex-direction: column-reverse;
 }
+
+.space-around {
+  justify-content: space-around;
+}
+
+.box-container3.section {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100% ;
+}
+
+.section-img {
+  display: flex;
+  flex-wrap: wrap ;
+}
+
 
 .icons-container i, a {
 	display: block;
