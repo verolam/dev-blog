@@ -165,8 +165,9 @@ ul {
 }
 
 img-about {
-  width: 400px;
-  height: 300px;
+  display: block;
+  width: 100%;
+  line-height: auto;
 }
 
 .icon {
