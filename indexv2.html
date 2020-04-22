@@ -10,26 +10,23 @@
 
 </head>
 
-<!-- My HTML page will be divided in 2 parts with flexbox : aside and main -->
+<!-- My HTML page will be divided in 2 parts with flexbox -->
 <body>
-  <div class="box-container">
-  <aside class="background aside">
 
-    <header class="p-t-1"> 
+  <aside class="left-content background text-center">
+    <header> 
       <h2>Welcome to My blog</h2>
-      <figure class="p-b-2"> 
+      <figure> 
         <img src="assets/img/Photo-id.jpg" alt="" class="img-head img-circle">
         <figcaption class="figcaption"> 
           Hello, My name is Véronique 
         </figcaption>
       </figure>
     </header>
-
-    <hr class="hr"> 
+  </br>
     
   
- <!-- Menu with icons -->  
- <div class="p-t-2">       
+ <!-- Menu with icons -->          
     <ul>
       <li>
         <i class="icon-home icon"></i>
@@ -44,12 +41,13 @@
         <a href="posts/posts-list.html">Posts</a>
       </li>           
     </ul>
-  </div>    
+   
   </aside>
 
-<main class="main padding-left p-t-1" >
-<header>
+<div class="right-content">
 
+<main class="main" >
+<header class="header">
   <h1>This page will contain my POSTS</h1>
   <div class="text-center p-t-1" >
     <h3 >If you want to be aware of new posts:</h3>  
@@ -61,7 +59,7 @@
 
 </header>
 
-<div class="box-container2">
+<div class="box-container2 padding-left" >
 
 <section class="m-b-2">
   <h2>
@@ -100,12 +98,15 @@
   <a href="posts/post04-VisualCode.html">Read More </a> 
  </section>
 </div>
-  
+
+ 
+</main>
+
 <footer class="footer p-t-1">
   <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
  </footer>
-</main>
- 
-</div>
+
+
+
 </body>
 </html>
