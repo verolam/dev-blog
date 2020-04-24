@@ -13,7 +13,7 @@
 <!-- My HTML page will be divided in 2 parts with flexbox : aside and main -->
 <body>
   <div class="box-container">
-  <aside class="background aside">
+  <aside  id ="#aside" class="background aside">
 
     <header class="p-t-1"> 
       <h2>Welcome to My blog</h2>
@@ -49,6 +49,18 @@
 
 <main class="main padding-left p-t-1" >
 <header>
+ 
+  
+  <!-- Menu for Mobile -->
+<h1 class="sidenav-title"> Veronique's Blog</h1>
+<ul class="sidenav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="posts/posts-list.html">Posts</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+
+
 
   <h1>This page will contain my POSTS</h1>
   <div class="text-center p-t-1" >
@@ -67,9 +79,9 @@
   <h2>
   <a href="posts/post01-markdown.html">Markdown syntax post</a>
   </h2>
-   <small>Date of publication : 04/07/2020</small> 
-  <p>Sample article introducing basic Markdown syntax and formatting HTML</p>
-   <a href="posts/post01-markdown.html">Read More</a> 
+     <small>Date of publication : 04/07/2020</small> 
+    <p>Sample article introducing basic Markdown syntax and formatting HTML</p>
+  <a href="posts/post01-markdown.html">Read More</a> 
 </section>
 
 
@@ -97,11 +109,14 @@
   </h2>
   <small>Date of publication : 04/18/2020</small> 
   <p>Visual Code Editor </p>
+
+  </p>
+
   <a href="posts/post04-VisualCode.html">Read More </a> 
  </section>
 </div>
   
-<footer class="footer p-t-1">
+<footer class="p-t-1 p-b-2">
   <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
  </footer>
 </main>
