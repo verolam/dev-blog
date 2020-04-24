@@ -191,7 +191,6 @@ aside header {
   width: 180px;
   height: 180px;
   border: 4px solid #fff;
-
 }
 
 .img-circle {
@@ -206,7 +205,8 @@ img-about {
 
 .icon {
   font-size: 30px;
-  text-align: left;
+  text-align: center;
+  margin: auto 3em;
 }
 
 
@@ -301,7 +301,6 @@ padding-right {
  background: linear-gradient(90deg, #7e8184, #aeadb5, #bcb7b8 );
 }
 
-
 .box-container {
   background-color: grey;
   display: flex;
@@ -334,19 +333,21 @@ padding-right {
 }
 
 .icons-container i, a {
-	display: block;
+	margin: auto 2em;
 	margin: .2em 0;
 }
 
+.icons-block {
+  margin: 2em auto;
+}
 
 
 /* 
-Part for Media query menu
+Part for Mobile Menu menu
 --------------------------------------*/
 
 /*Hide the nav*/
 .sidenav {
-padding-right: 0;
 display: none; 
 width: 100px;
 height: 150px;
@@ -382,7 +383,8 @@ ul.sidenav li a:hover:not(.active) {
 }
 
 
-/* End part for Media query menu */
+
+/* End part for Mobile Menu */
 
 
 /* LAYOUT 
@@ -397,35 +399,60 @@ ul.sidenav li a:hover:not(.active) {
 /*  Mobile version : no aside menu but a top menu*/
 
 @media ( max-width : 768px) {
-main {background-color : coral; width : 100%; height: 100%;font-size: 0.8rem;
+main {background-color : coral;
+      width : 100%;
+      height: 100%;
+      font-size: 0.8rem;
 }
 
 h1 {font-size:1rem;
 }
-aside {display : none;
+
+aside {display: none;
 }
 
-.sidenav {display: block ; text-align: center; float: none;
+.sidenav {display: block ;
+          text-align: center; 
+          float: none;
+          margin-right: auto;
+          margin-left: auto;
+}
+
+.mob-hidden {
+  display: none;
 }
 
 
 @media ( max-width : 480 px) {
-  main {background-color : coral; width : 100%; height: 100%;font-size: 0.8rem;
+  main {background-color : coral; 
+        width : 100%; 
+        height: 100%;
+        font-size: 0.8rem; 
+        
   }
   
   h1 {font-size:1rem;
     }
 
-  aside {display : none;}
+  aside {display: none;}
   }
 
-  .sidenav {display: block ;text-align: center; float: none;
+  .sidenav {display: block;
+            text-align: center;
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
   }
 
   .sidenav-title {display: block;
-
   }
 
+  .mob-hidden {
+    display: none;
+  }
+
+  #box-container {text-align : center;
+  }
 
 @media print {
 
