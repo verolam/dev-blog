@@ -206,8 +206,9 @@ img-about {
 .icon {
   font-size: 30px;
   text-align: center;
-  margin: auto 3em;
+  margin: auto 2em;
 }
+
 
 
 /* Margins *
@@ -332,15 +333,16 @@ padding-right {
   flex-wrap: wrap ;
 }
 
-.icons-container i, a {
-	margin: auto 2em;
+i, a {
+/* 	margin: auto 2em; */
 	margin: .2em 0;
 }
 
-.icons-block {
-  margin: 2em auto;
+.li-align {
+  display : flex;
+  flex-direction: column;
+  padding-bottom: 1em;
 }
-
 
 /* 
 Part for Mobile Menu menu
