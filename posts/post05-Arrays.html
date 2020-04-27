@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post05 - Javascript Arrays</title>
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/icons/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+
+
+
+<body>
+  <div class="box-container">
+    <aside class="background aside">
+      <header class="p-t-1"> 
+        <h2>Welcome to My blog</h2>
+        <figure> 
+          <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
+          <figcaption class="figcaption"> 
+            Hello, My name is Véronique 
+          </figcaption>
+        </figure>
+      </header>
+    </br>
+ 
+    <hr class="hr"> 
+    
+  
+    <!-- Menu with icons 
+   -------------------------------->  
+      <div class="p-t-1">
+        <ul>
+          <li class="li-align">
+            <i class="icon-home icon"></i>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="li-align">
+            <i class="icon-heart icon"></i>
+            <a href="../about.html">About me</a>
+          </li>
+        </ul>
+      </div>
+      
+    </aside>
+
+  
+
+<main class="main padding-left p-t-1 p-b-2">
+  <header>
+      <h1>Javascript Arrays</h1>
+  </header>
+
+      <article>
+        <h2>Arrays permits to storesimple data</h2>
+          <p>An array is a special variable, which can hold more than one value at a time. </p>
+          <img src="../assets/img/1_screen_JS.png" alt="">     
+           
+          <hr>
+          <h2>Links to internet and Tutorials</h2>
+          <a href="https://www.w3schools.com/js/js_arrays.asp" >If you want to learn more</a>
+
+          <hr>
+
+            <h2>Step by step description</h2>
+            <p>First create an array (in our example named "todoList") :</p>
+            <pre>
+              <code class="language-js">
+                let todoList = [
+                "Go shopping",
+                "Buy tobacco",
+                "Do this",
+                "Do that"
+                ];
+              </code>
+            </pre> 
+           
+             <p>
+              Access to the element of an Array: <br>
+              We access to one element of an array with an index. <br>
+              Note: Array indexes start with 0.
+             </p> 
+            <pre>
+              <code class="language-js">
+                let elt = todoList[0]; //elt will have as value "Go shopping";
+              </code>
+            </pre> 
+
+
+
+            <p>You can add an element to the ARRAY.</p>
+            <pre>
+              <code class="language-js">
+                todoList.push("Do also that (it important");
+              </code>
+            </pre> 
+
+            <p>You can delete an element from the ARRAY.</p>
+            <pre>
+              <code class="language-js">
+                todoList.splice(1, 1);
+              </code>
+            </pre> 
+
+            <p>To see the result you use the console.</p>
+            <pre>
+              <code class="language-js">
+                console.log("List after push",todoList);
+              </code>
+            </pre>   
+            
+             
+        
+      
+       
+    </article>
+    
+    <footer class="p-t-1 p-b-2">
+        <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+      </footer>  
+    
+</main>
+
+    <script src="../assets/plugins/prism/prism.js"></script>
+ 
+
+</body>
+
+</html>

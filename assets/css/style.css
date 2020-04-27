@@ -71,7 +71,7 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-h1,h2 {
+h1,h2,h3 {
   text-transform: uppercase;
 }
 
@@ -263,10 +263,6 @@ img-about {
   padding-left: 50px;
 }
 
-/* .padding-right {
-  padding-right: 50px;
-} */
-
 .section-about {
   padding-top: 20px;
   font-size: 1.1rem;
@@ -337,7 +333,6 @@ img-about {
 }
 
 i, a {
-/* 	margin: auto 2em; */
 	margin: .2em 0;
 }
 
