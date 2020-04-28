@@ -77,7 +77,6 @@ h1,h2,h3 {
 
 p {
   font-weight: 400;
-  text-transform : capitalize;
   margin-bottom: 0.5rem;
 }
 
@@ -89,6 +88,10 @@ td {
   padding: 15px ;
 }
 
+pre {
+  margin : 1,2em 0;
+  max-width: 600px
+}
 
 /* IMAGES
 ----------------------------------------------*/
@@ -203,6 +206,13 @@ img-about {
   width: 100%;
   /* line-height: auto; */
 }
+
+.img-article {
+  max-width : 600px;
+}
+
+
+
 
 .icon {
   font-size: 30px;
