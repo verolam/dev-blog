@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Post06 - Javascript Functions</title>
+
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/icons/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+
+
+
+<body>
+  <div class="box-container">
+    <aside class="background aside">
+      <header class="p-t-1"> 
+        <h2>Welcome to My blog</h2>
+        <figure> 
+          <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
+          <figcaption class="figcaption"> 
+            Hello, My name is Véronique 
+          </figcaption>
+        </figure>
+      </header>
+    </br>
+ 
+    <hr class="hr"> 
+    
+  
+    <!-- Menu with icons 
+   -------------------------------->  
+      <div class="p-t-1">
+        <ul>
+          <li class="li-align">
+            <i class="icon-home icon"></i>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="li-align">
+            <i class="icon-heart icon"></i>
+            <a href="../about.html">About me</a>
+          </li>
+        </ul>
+      </div>
+      
+    </aside>
+
+  
+
+<main class="main padding-left p-t-1">
+  <header>
+      <h1>Javascript Functions</h1>
+  </header>
+
+      <article class="img-article">
+        <h2> What is a JavaScript Function ? </h2>
+          <p>A JavaScript function is a block of code designed to perform a particular task.<br>
+            A JavaScript function is executed when "something" invokes it (calls it). </p>
+          <img src="../assets/img/2_screen_VS.png" alt="">     
+           
+          <hr>
+          <h2>Links to internet and Tutorials</h2>
+          <a href="https://www.w3schools.com/js/js_functions.asp" >If you want to learn more</a>
+
+          <hr>
+
+            <h2>Step by step description</h2>
+            <p> In this example the array "todoList" is declared <br>
+                and displayed by function displayTodos() :</p>
+            <pre>
+
+              <code class="language-js">
+                    /* TODO LIST - Global scope
+                    todoList is an array 
+                    ---------------------------------*/
+
+                    let todoList = [
+                      "Go shopping",
+                      "Buy tobacco",
+                      "Do this",
+                      "Do that"
+                    ];
+
+
+                    /* DISPLAY TODO 
+                    ---------------------------------*/
+                    // Function which display the todolist Array
+
+                    function displayTodos(){
+
+                      console.log(todoList);
+
+                    }
+              </code>
+            </pre> 
+           
+             <p> Two examples of functions addTodo() and changeTodo() <br>
+             </p> 
+            <pre>
+              <code class="language-js">
+                       /* ADD TODO
+                      ---------------------------------*/
+                      // Function which ADD an element in the Array todoList
+                      // then the previous function displayTodos() is called to show the result
+
+                      function addTodo(arg){
+
+                      todoList.push(arg);
+                      displayTodos();
+
+                      }
+
+                      addTodos("My New todo");
+
+
+                      /* Change a TODO
+                      ---------------------------------*/
+                      // Function which change and element of the array targetted by its index
+                      
+
+                      function changeTodo(index, text){
+
+                        todoList[index] = text;
+                        displayTodos();
+                        
+                        }
+                        
+                      changeTodo(1, "Buy sugar");      // element "Buy Tobacco" ==> "Buy sugar"   
+                      changeTodo(2, "Go for a walk");  // element "Do This" ==> "Go for a walk"
+  
+              </code>
+            </pre> 
+
+            
+            <p>You can delete elements from the ARRAY.</p>
+             
+            <pre>
+              <code class="language-js">
+                      /* Delete a TODO
+                      ---------------------------------*/
+                      // Function which delete one or several elements (numberToDelete) from a position(index1)
+
+                      function deleteTodo(index1, numberToDelete = 1){
+                      
+                        todoList.splice(index1, numberToDelete);
+                        displayTodos();
+                        
+                        }
+                        
+                        deleteTodo(1,1); //  Delete element one element with index 1
+              </code>
+            </pre>   
+       
+      </article>
+      
+  <footer class="p-t-2 p-b-1">
+      <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+  </footer>  
+    
+</main>
+
+    <script src="../assets/plugins/prism/prism.js"></script>
+</body>
+
+</html>
