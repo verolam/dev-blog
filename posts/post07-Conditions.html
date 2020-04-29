@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Post06 - Javascript Conditions</title>
+
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/icons/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+
+
+
+<body>
+  <div class="box-container">
+    <aside class="background aside">
+      <header class="p-t-1"> 
+        <h2>Welcome to My blog</h2>
+        <figure> 
+          <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
+          <figcaption class="figcaption"> 
+            Hello, My name is Véronique 
+          </figcaption>
+        </figure>
+      </header>
+    </br>
+ 
+    <hr class="hr"> 
+    
+  
+    <!-- Menu with icons 
+   -------------------------------->  
+      <div class="p-t-1">
+        <ul>
+          <li class="li-align">
+            <i class="icon-home icon"></i>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="li-align">
+            <i class="icon-heart icon"></i>
+            <a href="../about.html">About me</a>
+          </li>
+        </ul>
+      </div>
+      
+    </aside>
+
+  
+
+<main class="main padding-left p-t-1">
+  <header>
+      <h1>Javascript Conditions</h1>
+  </header>
+
+      <article class="img-article">
+        <h2> What is a JavaScript Conditional statement "if else and else if" ? </h2>
+          <p>Conditional statements are used to perform different actions based on different conditions.
+        </p>
+          <img src="../assets/img/3_screen_VS.png" alt="">     
+           
+          <hr>
+          <h2>Links to internet and Tutorials</h2>
+          <a href="https://www.w3schools.com/js/js_if_else.asp" >If you want to learn more</a>
+
+          <hr>
+
+            <h2>Step by step description</h2>
+            <p> An example of simple condition </p>
+            <pre>
+
+              <code class="language-js">
+                // A SIMPLE CONDITION
+                let num = 5;
+                let num2 = 20;
+                
+                if (num > 10) {
+                  console.log("True!!");
+                }
+                else {
+                  console.log("FALSE!");
+                } 
+              </code>
+            </pre> 
+
+            <p> There are different type of operators <br>
+            </p>
+            <pre>
+
+              <code class="language-js">
+               
+                 Comparisons operators :
+
+                 >=   greater or equal to
+                 <=   less or equal to 
+                 ==   equal to
+                 ===  equal to and the same type
+                 !=   NOT equal to
+                 !==  NOT equal to and not the same type
+                                 
+              </code>
+            </pre> 
+           
+
+             <p> Other examples of conditions more complicated</p> 
+            <pre>
+              <code class="language-js">
+
+                // A STRICT EQUALITY CHECK CONDITION
+                let num = 5;
+                let num2 = 20;
+
+                if (num === 5){
+                  console.log("true");
+                }
+                else {
+                  console.log("false");
+                }
+                
+                // A DOUBLE CHECK WITH "OR" (logical operator)
+                // One condition must be true
+                if (num > 5 || num < 30 ) {
+                  console.log("TRUE");
+                }
+                
+                // A DOUBLE CHECK WITH "AND" (logical operator)
+                // BOTh condictions must be true
+                
+                if ( num > 5 && num2 <30){
+                console.log("double check AND", "TRUE");
+                }
+                
+                //USING NOT OPERATOR
+                if (num != 5) {
+                console.log("FALSE");
+                }
+                
+                // COMPLEX CHECKS
+                
+                if ( (num === 5 && num > 5) || (num2 == 20 || num2 > 20) ){
+                console.log("complex cond : TRUE!");
+                }
+                
+              </code>
+            </pre> 
+               
+      </article>
+      
+  <footer class="p-t-2 p-b-2">
+      <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+  </footer>  
+    
+</main>
+
+    <script src="../assets/plugins/prism/prism.js"></script>
+</body>
+
+</html>
