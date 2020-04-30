@@ -67,8 +67,7 @@
 
           <hr>
 
-            <h2>Step by step description</h2>
-            <p> An example of simple condition </p>
+            <h2>An example of simple condition</h2>
             <pre>
 
               <code class="language-js">
@@ -85,8 +84,7 @@
               </code>
             </pre> 
 
-            <p> There are different type of operators <br>
-            </p>
+            <p> There are different type of operators </p>
             <pre>
 
               <code class="language-js">
@@ -146,6 +144,43 @@
               </code>
             </pre> 
                
+            <p> Other examples of conditions</p> 
+            <pre>
+              <code class="language-js">
+
+                /*Is the Number Even or Odd?
+                --------------------------------------------------*/
+                // Create a function that takes a number as an argument
+                // and returns "even" for even numbers and "odd" for odd numbers.
+                
+                function isEvenOrOdd(num2)
+                {
+                  remainder = 0;
+                  remainder = num2 % 2;
+                  if (num2 !== parseInt(num2))
+                    {console.log("data is not an integer");}
+                  else { 
+                  if (remainder == 0 ){
+                      console.log("isEvenOrOdd", "even" );}  
+                  else {
+                      console.log("isEvenOrOdd", "odd" );
+                    }
+                
+                  }
+                }
+                
+                isEvenOrOdd(3.2)    // ➞ "not an integer"
+                isEvenOrOdd(141)  // ➞ "even"
+                isEvenOrOdd(146)  // ➞ "even"
+                isEvenOrOdd(19)   // ➞ "odd"
+               
+               
+              </code>
+            </pre> 
+
+
+
+
       </article>
       
   <footer class="p-t-2 p-b-2">

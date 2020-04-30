@@ -192,6 +192,13 @@ aside header {
 
 /* Images *
 ----------------------------------------------*/
+
+ /* Flip an image */
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .img-head {
   width: 180px;
   height: 180px;
@@ -204,15 +211,11 @@ aside header {
 
 img-about {
   width: 100%;
-  /* line-height: auto; */
 }
 
 .img-article {
   max-width : 800px;
 }
-
-
-
 
 .icon {
   font-size: 30px;
