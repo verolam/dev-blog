@@ -20,10 +20,10 @@
       <header class="p-t-1"> 
         <h2>Welcome to My blog</h2>
         <figure> 
-          <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
-          <figcaption class="figcaption"> 
-            Hello, My name is Véronique 
-          </figcaption>
+        <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
+        <figcaption class="figcaption"> 
+          <span>Hello, My name is Véronique</span>
+         </figcaption>
         </figure>
       </header>
     </br>
@@ -49,146 +49,138 @@
     </aside>
 
   
-
 <main class="main padding-left p-t-1">
   <header>
-      <h1>Javascript Conditions</h1>
+    <h1>Javascript Conditions</h1>
   </header>
+    <article class="img-article">
+      <h2> What is a JavaScript Conditional statement "if else and else if" ? </h2>
+      <p>Conditional statements are used to perform different actions based on different conditions.
+      </p>
+      <img src="../assets/img/3_screen_VS.png" alt="">     
+          
+      <hr>
+      <h2>Links to internet and Tutorials</h2>
+      <a href="https://www.w3schools.com/js/js_if_else.asp" >If you want to learn more</a>
 
-      <article class="img-article">
-        <h2> What is a JavaScript Conditional statement "if else and else if" ? </h2>
-          <p>Conditional statements are used to perform different actions based on different conditions.
-        </p>
-          <img src="../assets/img/3_screen_VS.png" alt="">     
-           
-          <hr>
-          <h2>Links to internet and Tutorials</h2>
-          <a href="https://www.w3schools.com/js/js_if_else.asp" >If you want to learn more</a>
+      <hr>
 
-          <hr>
+        <h2>An example of simple condition</h2>
+        <pre>
 
-            <h2>An example of simple condition</h2>
-            <pre>
+          <code class="language-js">
+            // A SIMPLE CONDITION
+            let num = 5;
+            let num2 = 20;
+            
+            if (num > 10) {
+              console.log("True!!");
+            }
+            else {
+              console.log("FALSE!");
+            } 
+          </code>
+        </pre> 
 
-              <code class="language-js">
-                // A SIMPLE CONDITION
-                let num = 5;
-                let num2 = 20;
-                
-                if (num > 10) {
-                  console.log("True!!");
+        <p> There are different type of operators </p>
+        <pre>
+
+          <code class="language-js">
+            
+              Comparisons operators :
+
+              >=   greater or equal to
+              <=   less or equal to 
+              ==   equal to
+              ===  equal to and the same type
+              !=   NOT equal to
+              !==  NOT equal to and not the same type
+                              
+          </code>
+        </pre> 
+        
+
+          <p> Other examples of conditions more complicated</p> 
+        <pre>
+          <code class="language-js">
+
+            // A STRICT EQUALITY CHECK CONDITION
+            let num = 5;
+            let num2 = 20;
+
+            if (num === 5){
+              console.log("true");
+            }
+            else {
+              console.log("false");
+            }
+            
+            // A DOUBLE CHECK WITH "OR" (logical operator)
+            // One condition must be true
+            if (num > 5 || num < 30 ) {
+              console.log("TRUE");
+            }
+            
+            // A DOUBLE CHECK WITH "AND" (logical operator)
+            // BOTh condictions must be true
+            
+            if ( num > 5 && num2 <30){
+            console.log("double check AND", "TRUE");
+            }
+            
+            //USING NOT OPERATOR
+            if (num != 5) {
+            console.log("FALSE");
+            }
+            
+            // COMPLEX CHECKS
+            
+            if ( (num === 5 && num > 5) || (num2 == 20 || num2 > 20) ){
+            console.log("complex cond : TRUE!");
+            }
+            
+          </code>
+        </pre> 
+            
+        <p> Other examples of conditions</p> 
+        <pre>
+          <code class="language-js">
+
+            /*Is the Number Even or Odd?
+            --------------------------------------------------*/
+            // Create a function that takes a number as an argument
+            // and returns "even" for even numbers and "odd" for odd numbers.
+            
+            function isEvenOrOdd(num2)
+            {
+              remainder = 0;
+              remainder = num2 % 2;
+              if (num2 !== parseInt(num2))
+                {console.log("data is not an integer");}
+              else { 
+              if (remainder == 0 ){
+                  console.log("isEvenOrOdd", "even" );}  
+              else {
+                  console.log("isEvenOrOdd", "odd" );
                 }
-                else {
-                  console.log("FALSE!");
-                } 
-              </code>
-            </pre> 
-
-            <p> There are different type of operators </p>
-            <pre>
-
-              <code class="language-js">
-               
-                 Comparisons operators :
-
-                 >=   greater or equal to
-                 <=   less or equal to 
-                 ==   equal to
-                 ===  equal to and the same type
-                 !=   NOT equal to
-                 !==  NOT equal to and not the same type
-                                 
-              </code>
-            </pre> 
-           
-
-             <p> Other examples of conditions more complicated</p> 
-            <pre>
-              <code class="language-js">
-
-                // A STRICT EQUALITY CHECK CONDITION
-                let num = 5;
-                let num2 = 20;
-
-                if (num === 5){
-                  console.log("true");
-                }
-                else {
-                  console.log("false");
-                }
-                
-                // A DOUBLE CHECK WITH "OR" (logical operator)
-                // One condition must be true
-                if (num > 5 || num < 30 ) {
-                  console.log("TRUE");
-                }
-                
-                // A DOUBLE CHECK WITH "AND" (logical operator)
-                // BOTh condictions must be true
-                
-                if ( num > 5 && num2 <30){
-                console.log("double check AND", "TRUE");
-                }
-                
-                //USING NOT OPERATOR
-                if (num != 5) {
-                console.log("FALSE");
-                }
-                
-                // COMPLEX CHECKS
-                
-                if ( (num === 5 && num > 5) || (num2 == 20 || num2 > 20) ){
-                console.log("complex cond : TRUE!");
-                }
-                
-              </code>
-            </pre> 
-               
-            <p> Other examples of conditions</p> 
-            <pre>
-              <code class="language-js">
-
-                /*Is the Number Even or Odd?
-                --------------------------------------------------*/
-                // Create a function that takes a number as an argument
-                // and returns "even" for even numbers and "odd" for odd numbers.
-                
-                function isEvenOrOdd(num2)
-                {
-                  remainder = 0;
-                  remainder = num2 % 2;
-                  if (num2 !== parseInt(num2))
-                    {console.log("data is not an integer");}
-                  else { 
-                  if (remainder == 0 ){
-                      console.log("isEvenOrOdd", "even" );}  
-                  else {
-                      console.log("isEvenOrOdd", "odd" );
-                    }
-                
-                  }
-                }
-                
-                isEvenOrOdd(3.2)    // ➞ "not an integer"
-                isEvenOrOdd(141)  // ➞ "even"
-                isEvenOrOdd(146)  // ➞ "even"
-                isEvenOrOdd(19)   // ➞ "odd"
-               
-               
-              </code>
-            </pre> 
-
-
-
-
-      </article>
+            
+              }
+            }
+            
+            isEvenOrOdd(3.2)    // ➞ "not an integer"
+            isEvenOrOdd(141)  // ➞ "even"
+            isEvenOrOdd(146)  // ➞ "even"
+            isEvenOrOdd(19)   // ➞ "odd"
+                      
+          </code>
+        </pre> 
+    </article>
       
-  <footer class="p-t-2 p-b-2">
-      <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
-  </footer>  
-    
-</main>
-
+    <footer class="p-t-2 p-b-2">
+        <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+    </footer>  
+      
+  </main>
     <script src="../assets/plugins/prism/prism.js"></script>
 </body>
 

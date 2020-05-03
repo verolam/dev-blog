@@ -140,7 +140,6 @@ input {
 
 
 
-
 /* HELPER CLASSES
 ============================================================*/
 
@@ -160,6 +159,11 @@ input {
 
 .figcaption {
    font-size: 1.2rem;
+   }
+
+.french-font {
+  font-family : French Script;
+  font-size : 1.5 rem;
    }
 
 
@@ -193,12 +197,6 @@ aside header {
 /* Images *
 ----------------------------------------------*/
 
- /* Flip an image */
-img:hover {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
 .img-head {
   width: 180px;
   height: 180px;
@@ -207,10 +205,6 @@ img:hover {
 
 .img-circle {
   border-radius: 50%;
-}
-
-img-about {
-  width: 100%;
 }
 
 .img-article {
@@ -223,6 +217,16 @@ img-about {
   margin: auto 2em;
 }
 
+/* Flip an image */
+img.flip:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+img.img-head:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 
 /* Margins *
 ----------------------------------------------*/

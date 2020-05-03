@@ -17,34 +17,35 @@
 <body>
   <div class="box-container">
     <aside class="background aside">
-      <header class="p-t-1"> 
-        <h2>Welcome to My blog</h2>
-        <figure> 
+        <header class="p-t-1"> 
+          <h2>Welcome to My blog</h2>
+          <figure> 
           <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
           <figcaption class="figcaption"> 
-            Hello, My name is Véronique 
+          Hello, My name is Véronique 
           </figcaption>
-        </figure>
-      </header>
-    </br>
- 
-    <hr class="hr"> 
+          </figure>
+        </header>
+
+      </br>
+  
+      <hr class="hr"> 
     
   
-    <!-- Menu with icons 
-   -------------------------------->  
-      <div class="p-t-1">
-        <ul>
-          <li class="li-align">
-            <i class="icon-home icon"></i>
-            <a href="../index.html">Home</a>
-          </li>
-          <li class="li-align">
-            <i class="icon-heart icon"></i>
-            <a href="../about.html">About me</a>
-          </li>
-        </ul>
-      </div>
+      <!-- Menu with icons 
+    -------------------------------->  
+        <div class="p-t-1">
+          <ul>
+            <li class="li-align">
+              <i class="icon-home icon"></i>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="li-align">
+              <i class="icon-heart icon"></i>
+              <a href="../about.html">About me</a>
+            </li>
+          </ul>
+        </div>
       
     </aside>
 
@@ -52,220 +53,220 @@
 
 <main class="main padding-left p-t-1">
   <header>
-      <h1>Javascript Functions</h1>
+    <h1>Javascript Functions</h1>
   </header>
 
-      <article class="img-article">
-          <h2> What is a JavaScript Function ? </h2>
-          <p>A JavaScript function is a block of code designed to perform a particular task.<br>
-            A JavaScript function is executed when "something" invokes it (calls it). </p>
-          <img src="../assets/img/2_screen_VS.png" alt="">     
-           
-          <hr>
-          <h2>Links to internet and Tutorials</h2>
-          <a href="https://www.w3schools.com/js/js_functions.asp" >If you want to learn more</a>
+     <article class="img-article">
+      <h2> What is a JavaScript Function ? </h2>
+      <p>A JavaScript function is a block of code designed to perform a particular task.<br>
+        A JavaScript function is executed when "something" invokes it (calls it). </p>
+      <img src="../assets/img/2_screen_VS.png" alt="">     
+        
+      <hr>
+      <h2>Links to internet and Tutorials</h2>
+      <a href="https://www.w3schools.com/js/js_functions.asp" >If you want to learn more</a>
 
-          <hr>
+      <hr>
 
-            <h2>Step by step description</h2>
-            <p> In this example the array "todoList" is declared <br>
-                and displayed by function displayTodos() :</p>
-          <pre>
+        <h2>Step by step description</h2>
+        <p> In this example the array "todoList" is declared <br>
+            and displayed by function displayTodos() :</p>
+      <pre>
 
-          <code class="language-js">
+      <code class="language-js">
 
-              /* TODO LIST - Global scope
-              todoList is an array 
-              ---------------------------------*/
+          /* TODO LIST - Global scope
+          todoList is an array 
+          ---------------------------------*/
 
-              let todoList = [
-                "Go shopping",
-                "Buy tobacco",
-                "Do this",
-                "Do that"
-              ];
+          let todoList = [
+            "Go shopping",
+            "Buy tobacco",
+            "Do this",
+            "Do that"
+          ];
 
 
-              /* DISPLAY TODO 
-              ---------------------------------*/
-              // Function which display the todolist Array
+          /* DISPLAY TODO 
+          ---------------------------------*/
+          // Function which display the todolist Array
 
-              function displayTodos(){
+          function displayTodos(){
 
-                console.log(todoList);
+            console.log(todoList);
+
+          }
+        </code>
+        </pre> 
+        
+          <p> Two examples of functions addTodo() and changeTodo()</p> 
+        <pre>
+        <code class="language-js">
+
+          /* ADD TODO
+          ---------------------------------*/
+          // Function which ADD an element in the Array todoList
+          // then the previous function displayTodos() is called to show the result
+
+          function addTodo(arg){
+
+          todoList.push(arg);
+          displayTodos();
+
+          }
+
+          addTodos("My New todo");
+
+
+          /* Change a TODO
+          ---------------------------------*/
+          // Function which change and element of the array targetted by its index
+          
+
+          function changeTodo(index, text){
+
+            todoList[index] = text;
+            displayTodos();
+            
+            }
+            
+          changeTodo(1, "Buy sugar");      // element "Buy Tobacco" ==> "Buy sugar"   
+          changeTodo(2, "Go for a walk");  // element "Do This" ==> "Go for a walk"
+
+        </code>
+        </pre> 
+
+          
+        <p>You can delete elements from the ARRAY.</p>
+        <pre>
+        <code class="language-js">
+
+          /* Delete a TODO
+          ---------------------------------*/
+          // Function which delete one or several elements (numberToDelete) from a position(index1)
+
+          function deleteTodo(index1, numberToDelete = 1){
+          
+            todoList.splice(index1, numberToDelete);
+            displayTodos();
+            
+            }
+            
+          deleteTodo(1,1); //  Delete element one element with index 1
+        </code>
+        </pre>   
+
+        <p>Example of a function using an object as argument</p>
+        <pre>
+        <code class="language-js">
+
+            /* Function Cities with facts using an object
+            ---------------------------------*/
+            // The argument passed to the function is an Object
+
+            function cityFacts(arg){
+              console.log(arg.name + " has a population of " + arg.population + 
+              " and is situated in " + 
+            arg.continent);
+            }
+            
+            // Call of the function cityFacts()
+            cityFacts({
+              name: "Paris",
+              population: "2,140,526",
+              continent: "Europe"
+            }) // "Paris has a population of 2,140,526 and is situated in Europe"
+
+            cityFacts({
+              name: "Tokyo",
+              population: "13,929,286",
+              continent: "Asia"
+            }) // "Tokyo has a population of 13,929,286 and is situated in Asia"
+
+
+            
+            /* Is the Word Singular or Plural?
+            /*-------------------------------------------*/
+            // second method with using : length and substring
+
+            function isPlural2(word) {
+            let wordLength =0;
+            wordLength = word.length;
+
+            console.log(wordLength, word);
+            let lastLetter = word.substring(wordLength, wordLength - 1);
+
+            if (lastLetter == "s"){
+              console.log("lastLetter is s", "true");
+            }
+            else {
+              console.log("lastLetter is s", "false");
+            }
+            }
+
+            isPlural2("changes") //➞ true
+            isPlural2("change") //➞ false
+            isPlural2("dudes") // ➞ true
+            isPlural2("magic") // ➞ false
+
+
+            
+            /*Is the Number Even or Odd?
+            --------------------------------------------------*/
+            // Create a function that takes a number as an argument
+            // and returns "even" for even numbers and "odd" for odd numbers.
+
+            function isEvenOrOdd(num2)
+            {
+              remainder = 0;
+              remainder = num2 % 2;
+              if (num2 !== parseInt(num2))
+                {console.log("data is not an integer");}
+              else { 
+              if (remainder == 0 ){
+                  console.log("isEvenOrOdd", "even" );}  
+              else {
+                  console.log("isEvenOrOdd", "odd" );
+                }
 
               }
-            </code>
-            </pre> 
-           
-             <p> Two examples of functions addTodo() and changeTodo()</p> 
-            <pre>
-            <code class="language-js">
+            }
 
-              /* ADD TODO
-              ---------------------------------*/
-              // Function which ADD an element in the Array todoList
-              // then the previous function displayTodos() is called to show the result
-
-              function addTodo(arg){
-
-              todoList.push(arg);
-              displayTodos();
-
-              }
-
-              addTodos("My New todo");
+            isEvenOrOdd(3.2)    // ➞ "not an integer"
+            isEvenOrOdd(141)  // ➞ "even"
+            isEvenOrOdd(146)  // ➞ "even"
+            isEvenOrOdd(19)   // ➞ "odd"
+        </code>
+        </pre> 
 
 
-              /* Change a TODO
-              ---------------------------------*/
-              // Function which change and element of the array targetted by its index
-              
+        <p>Other Example of function</p>
+        <pre>
+        <code class="language-js">
 
-              function changeTodo(index, text){
+          /* The Farm Problem
+          ---------------------------------*/
+          /*  In this challenge, a farmer is asking you to tell him
+          how many legs can be counted among all his animals.
+          The farmer breeds three species:*/
 
-                todoList[index] = text;
-                displayTodos();
-                
-                }
-                
-              changeTodo(1, "Buy sugar");      // element "Buy Tobacco" ==> "Buy sugar"   
-              changeTodo(2, "Go for a walk");  // element "Do This" ==> "Go for a walk"
-  
-            </code>
-            </pre> 
+          let numLeg = 0;
+          function animals(chicken, cows, pigs){
+          numLeg = chicken * 2 + cows * 4 + pigs * 4;
+          console.log ("The number total of legs is " + numLeg) 
 
-              
-            <p>You can delete elements from the ARRAY.</p>
-            <pre>
-            <code class="language-js">
+          }
+          animals(2, 3, 5) // ➞ 36
+          animals(1, 2, 3) // ➞ 22
+          animals(5, 2, 8) // ➞ 50
 
-              /* Delete a TODO
-              ---------------------------------*/
-              // Function which delete one or several elements (numberToDelete) from a position(index1)
+        </code>
+        </pre> 
 
-              function deleteTodo(index1, numberToDelete = 1){
-              
-                todoList.splice(index1, numberToDelete);
-                displayTodos();
-                
-                }
-                
-              deleteTodo(1,1); //  Delete element one element with index 1
-            </code>
-            </pre>   
-
-            <p>Example of a function using an object as argument</p>
-            <pre>
-            <code class="language-js">
-
-               /* Function Cities with facts using an object
-                ---------------------------------*/
-                // The argument passed to the function is an Object
-
-                function cityFacts(arg){
-                  console.log(arg.name + " has a population of " + arg.population + 
-                  " and is situated in " + 
-                arg.continent);
-                }
-                
-                // Call of the function cityFacts()
-                cityFacts({
-                  name: "Paris",
-                  population: "2,140,526",
-                  continent: "Europe"
-                }) // "Paris has a population of 2,140,526 and is situated in Europe"
-
-                cityFacts({
-                  name: "Tokyo",
-                  population: "13,929,286",
-                  continent: "Asia"
-                }) // "Tokyo has a population of 13,929,286 and is situated in Asia"
-
-
-                
-                /* Is the Word Singular or Plural?
-                /*-------------------------------------------*/
-                // second method with using : length and substring
-
-                function isPlural2(word) {
-                let wordLength =0;
-                wordLength = word.length;
-
-                console.log(wordLength, word);
-                let lastLetter = word.substring(wordLength, wordLength - 1);
-
-                if (lastLetter == "s"){
-                  console.log("lastLetter is s", "true");
-                }
-                else {
-                  console.log("lastLetter is s", "false");
-                }
-                }
-
-                isPlural2("changes") //➞ true
-                isPlural2("change") //➞ false
-                isPlural2("dudes") // ➞ true
-                isPlural2("magic") // ➞ false
-
-
-                
-                /*Is the Number Even or Odd?
-                --------------------------------------------------*/
-                // Create a function that takes a number as an argument
-                // and returns "even" for even numbers and "odd" for odd numbers.
-
-                function isEvenOrOdd(num2)
-                {
-                  remainder = 0;
-                  remainder = num2 % 2;
-                  if (num2 !== parseInt(num2))
-                    {console.log("data is not an integer");}
-                  else { 
-                  if (remainder == 0 ){
-                      console.log("isEvenOrOdd", "even" );}  
-                  else {
-                      console.log("isEvenOrOdd", "odd" );
-                    }
-
-                  }
-                }
-
-                isEvenOrOdd(3.2)    // ➞ "not an integer"
-                isEvenOrOdd(141)  // ➞ "even"
-                isEvenOrOdd(146)  // ➞ "even"
-                isEvenOrOdd(19)   // ➞ "odd"
-              </code>
-              </pre> 
-
-
-              <p>Other Example of function</p>
-              <pre>
-              <code class="language-js">
-
-              /* The Farm Problem
-              ---------------------------------*/
-              /*  In this challenge, a farmer is asking you to tell him
-              how many legs can be counted among all his animals.
-              The farmer breeds three species:*/
-
-              let numLeg = 0;
-              function animals(chicken, cows, pigs){
-              numLeg = chicken * 2 + cows * 4 + pigs * 4;
-              console.log ("The number total of legs is " + numLeg) 
-
-              }
-              animals(2, 3, 5) // ➞ 36
-              animals(1, 2, 3) // ➞ 22
-              animals(5, 2, 8) // ➞ 50
-
-              </code>
-              </pre> 
-
-      </article>
+     </article>
       
   <footer class="p-t-2 p-b-1">
-      <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+    <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
   </footer>  
     
 </main>
