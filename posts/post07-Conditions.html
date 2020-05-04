@@ -71,8 +71,6 @@
           <code class="language-js">
             // A SIMPLE CONDITION
             let num = 5;
-            let num2 = 20;
-            
             if (num > 10) {
               console.log("True!!");
             }
@@ -97,11 +95,10 @@
               !==  NOT equal to and not the same type
                               
           </code>
-        </pre> 
-        
-
+          </pre> 
+          
           <p> Other examples of conditions more complicated</p> 
-        <pre>
+          <pre>
           <code class="language-js">
 
             // A STRICT EQUALITY CHECK CONDITION
@@ -115,8 +112,10 @@
               console.log("false");
             }
             
+
             // A DOUBLE CHECK WITH "OR" (logical operator)
             // One condition must be true
+
             if (num > 5 || num < 30 ) {
               console.log("TRUE");
             }
@@ -173,7 +172,40 @@
             isEvenOrOdd(19)   // ➞ "odd"
                       
           </code>
-        </pre> 
+          </pre> 
+
+          <p> The Ternary Operator</p> 
+          <pre>
+          <code class="language-js">
+
+            /*THE TERNARY OPERATOR 
+            -----------------------*/
+            let num5 = 25;
+            
+            if (num5 >= 25) {
+              output = "TRUE";
+            }
+            else {
+              output = "FALSE";
+            }
+            show(output);
+          
+            
+                     //CONDITION   IF TRUE  IF FALSE
+            output = (num5 >= 25) ? "TRUE" : "FALSE";
+            show(output);
+            
+            // another way 
+
+            output = num5 >=25;
+            if(output) {
+              show("Yes is true!");
+            }
+                        
+          </code>
+        </pre>
+
+
     </article>
       
     <footer class="p-t-2 p-b-2">

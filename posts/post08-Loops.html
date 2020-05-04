@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Post06 - Javascript Loops</title>
+
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/icons/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+
+
+
+<body>
+  <div class="box-container">
+    <aside class="background aside">
+      <header class="p-t-1"> 
+        <h2>Welcome to My blog</h2>
+        <figure> 
+        <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
+        <figcaption class="figcaption"> 
+          <span>Hello, My name is Véronique</span>
+         </figcaption>
+        </figure>
+      </header>
+    </br>
+ 
+    <hr class="hr"> 
+    
+  
+    <!-- Menu with icons 
+   -------------------------------->  
+      <div class="p-t-1">
+        <ul>
+          <li class="li-align">
+            <i class="icon-home icon"></i>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="li-align">
+            <i class="icon-heart icon"></i>
+            <a href="../about.html">About me</a>
+          </li>
+        </ul>
+      </div>
+      
+    </aside>
+
+  
+<main class="main padding-left p-t-1">
+  <header>
+    <h1>Javascript Loops</h1>
+  </header>
+    <article class="img-article">
+      <h2> What is a JavaScript Loop statement ? </h2>
+      <p>Loops are handy, if you want to run the same code over and over again, each time with a different value.
+      </p>
+      <img src="../assets/img/4_screen_VS.png" alt="">     
+          
+      <hr>
+      <h2>Links to internet and Tutorials</h2>
+      <a href="https://www.w3schools.com/js/js_loop_for.asp" >If you want to learn more</a>
+
+      <hr>
+
+        <h2>An example of one loop</h2>
+        <pre>
+
+          <code class="language-js">
+            //2 Display the properties of an array
+
+            let todos = [
+              {
+                text: "Learn JS",
+                completed: true
+              },
+              {
+                text: "Learn PHP",
+                completed: false
+              },
+              {
+                text: "Learn Python",
+                completed: false
+              }
+            ];
+
+          // First way 
+
+          for (let i=0; i < todos.length; i++) {
+
+          show(todos[i].text + " : " +  todos[i].completed );
+
+            }       
+
+          // Second way 
+
+          for (let i=0; i < todos.length; i++) {
+          let text = todos[i].text;
+          let completed = todos[i].completed ;
+          let displayStatus = (completed) ?  " Done" : " Todo ...";
+
+          let output = text + " " + displayStatus;
+          show(output);
+
+          }
+              
+          </code>
+        </pre> 
+              
+            
+        <p> Other examples of loops</p> 
+        <pre>
+          <code class="language-js">
+
+            /*Is the Number Even or Odd?
+            --------------------------------------------------*/
+            // Create a function that takes a number as an argument
+            // and returns "even" for even numbers and "odd" for odd numbers.
+            
+            function isEvenOrOdd(num2){
+              remainder = 0;
+              remainder = num2 % 2;
+              if (num2 !== parseInt(num2))
+                {console.log("data is not an integer");}
+              else { 
+              if (remainder == 0 ){
+                  console.log("isEvenOrOdd", "even" );}  
+              else {
+                  console.log("isEvenOrOdd", "odd" );
+              }
+              
+              }
+
+            }
+            
+            isEvenOrOdd(3.2)    // ➞ "not an integer"
+            isEvenOrOdd(141)  // ➞ "even"
+            isEvenOrOdd(146)  // ➞ "even"
+            isEvenOrOdd(19)   // ➞ "odd"
+                      
+          </code>
+        </pre> 
+        
+        <pre>
+          <code class="language-js">
+
+        /* LOOP :  Filter out Strings from an Array
+        -------------------------------------- */
+        /* Create a function that takes an array of non-negative 
+        integers and strings and return a new array without the strings. */
+        
+        function filterArray(list2) {
+        let i = 0;
+        let list3 = []; // new array with only integer
+        
+        for (i=0; i < list2.length ; i++)
+          if (Number.isInteger(list2[i])) {
+            console.log(list2[i] + " is an integer");
+            list3.push(list2[i]); // add integer in the list
+           
+          } 
+          else {
+            console.log(list2[i] + " is not an integer");
+              
+          }
+        
+          list2 = list3; // new list2 
+          
+          }
+          
+          filterArray([1, 2, "a", "b"])   // ➞ [1, 2]
+          filterArray([1, "a", "b", 0, 15]) // ➞ [1, 0, 15]
+          filterArray([1, 2, "aasf", "1", "123", 123]) // ➞ [1, 2, 123]
+
+      </code>
+    </pre> 
+
+
+
+    </article>
+      
+    <footer class="p-t-2 p-b-2">
+        <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+    </footer>  
+      
+  </main>
+    <script src="../assets/plugins/prism/prism.js"></script>
+</body>
+
+</html>
