@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Post10 - Format Date</title>
+
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/icons/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+
+
+
+<body>
+  <div class="box-container">
+    <aside class="background aside">
+      <header class="p-t-1"> 
+        <h2>Welcome to My blog</h2>
+        <figure> 
+        <img src="../assets//img/Photo-id.jpg" alt="" class="img-head img-circle">
+        <figcaption class="figcaption"> 
+          <span>Hello, My name is Véronique</span>
+         </figcaption>
+        </figure>
+      </header>
+    </br>
+ 
+    <hr class="hr"> 
+    
+  
+    <!-- Menu with icons 
+   -------------------------------->  
+      <div class="p-t-1">
+        <ul>
+          <li class="li-align">
+            <i class="icon-home icon"></i>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="li-align">
+            <i class="icon-heart icon"></i>
+            <a href="../about.html">About me</a>
+          </li>
+        </ul>
+      </div>
+      
+    </aside>
+
+  
+<main class="main padding-left p-t-1">
+  <header>
+    <h1>Everything You Need to Know About Date in JavaScript</h1>
+  </header>
+    <article class="img-article">
+      <h2> Formatting Date </h2>
+      <p>Date is weird in JavaScript</p>
+               
+      <hr>
+      <h2>Links to internet and Tutorials</h2>
+      <a href="https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/" >If you want to learn more</a>
+
+      <hr>
+
+        <h2>Examples of How to get and format Date</h2>
+        <pre>
+          <code class="language-js">
+
+            /* DATES
+            ------------------------------------*/
+
+            // today's date ==> Tue May 05 2020 21:37:27 GMT+0200 (heure d’été d’Europe centrale)
+            let d = new Date(); 
+            console.log(d);  
+
+            // year format YYYY ==> 2020
+            year = d.getFullYear(); 
+            console.log(year); 
+
+            // Month as a number !!!! month start with index 0 so ==> 04 means May 
+            month = d.getMonth();
+            console.log(month);
+
+
+            // Different way to display date
+
+            const myBirthday = new Date('October 24, 1992 22:15:00');
+
+            myBirthday.toString()  // "Sat Oct 24 1992 22:15:00 GMT+0100 (heure normale d’Europe centrale)"
+            myBirthday.toTimeString() //"22:15:00 GMT+0100 (heure normale d’Europe centrale)"
+            myBirthday.toUTCString()  //"Sat, 24 Oct 1992 21:15:00 GMT"
+            myBirthday.toDateString() //"Sat Oct 24 1992"
+            myBirthday.toISOString()  //"1992-10-24T21:15:00.000Z"
+            myBirthday.toLocaleString() //"24/10/1992 à 22:15:00"
+            myBirthday.toLocaleTimeString()	//22:15:00
+
+          </code>
+        </pre> 
+
+    </article>
+      
+    <footer class="p-t-2 p-b-2">
+        <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+    </footer>  
+      
+  </main>
+    <script src="../assets/plugins/prism/prism.js"></script>
+</body>
+
+</html>

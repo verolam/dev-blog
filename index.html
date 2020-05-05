@@ -68,6 +68,9 @@
         -------------------------------->
 
         <div class="mob-hidden">
+
+          <p id="date" class="padding-left"></p>
+
           <h1>This page will contain my POSTS</h1>
           <div class="text-center p-t-1" >
             <h3 >If you want to be aware of new posts:</h3>  
@@ -163,6 +166,14 @@
             <a href="posts/post09-Html_And_Dom.html">Read More </a> 
           </section>
 
+          <section class="m-b-2">
+            <h2>
+             <a href="posts/post10-Format Date.html">Using Date in JS </a>
+            </h2>
+            <small>Date of publication : 05/05/2020</small> 
+            <p>Using Date in JS</p>
+            <a href="posts/post10-Format Date.html">Read More </a> 
+          </section>
 
         </div>
 
@@ -173,6 +184,13 @@
   </main>
 
   </div>
+
+  <script>
+    var d = new Date();
+   
+    document.getElementById("date").innerHTML =  d.toLocaleString();
+   </script>
+
 </body>
 
 </html>
