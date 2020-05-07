@@ -452,13 +452,14 @@ aside {display: none;
 
 
 @media ( max-width : 480 px) {
-  main {background-color : coral; 
+  body {background-color : coral; 
         width : 100%; 
         height: 100%;
-        font-size: 0.8rem; 
+        font-size: 10px; 
         
   }
-  
+   
+
   h1 {font-size:1rem;
     }
 
