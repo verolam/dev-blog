@@ -348,7 +348,7 @@ img.img-head:hover {
 }
 
 .box-container3.section {
-  background-color: grey;
+  background-color:grey;
   flex-direction: row;
   width: 100%;
   height: 100% ;
@@ -385,7 +385,8 @@ height: 150px;
 ul.sidenav {
   list-style-type: none;
   height: 100px;
-  background-color: #f1f1f1;
+  background-color: blueviolet; 
+ 
 }
 
 ul.sidenav li a {
@@ -396,13 +397,12 @@ ul.sidenav li a {
 }
  
 ul.sidenav li a.active {
-  background-color: rgba(255, 255, 32, 0.53)
-  ;
+  background-color: yellow;
   color: black;
 }
 
 ul.sidenav li a:hover:not(.active) {
-  background-color: #555;
+  background-color: indigo;
   color: black;
 }
 
@@ -427,8 +427,7 @@ ul.sidenav li a:hover:not(.active) {
 /*  Mobile version : no aside icons anymore  but a scrolldown menu on Top*/
 
 @media ( max-width : 768px) {
-main {background-color :  rgba(0, 3, 9, 0.1)
-  ;
+main {background-color: linear-gradient(90deg, #7e8184, #aeadb5, #bcb7b8 ); 
       width : 100%;
       height: 100%;
       font-size: 0.8rem;
@@ -454,7 +453,7 @@ aside {display: none;
 
 
 @media ( max-width : 480 px) {
-  body {background-color :  rgba(0, 3, 9, 0.1); 
+  body {background-color: linear-gradient(90deg, #7e8184, #aeadb5, #bcb7b8 );
         width : 100%; 
         height: 100%;
         font-size: 8px; 
