@@ -396,7 +396,8 @@ ul.sidenav li a {
 }
  
 ul.sidenav li a.active {
-  background-color: yellowgreen;
+  background-color: rgba(255, 255, 32, 0.53)
+  ;
   color: black;
 }
 
@@ -426,7 +427,8 @@ ul.sidenav li a:hover:not(.active) {
 /*  Mobile version : no aside icons anymore  but a scrolldown menu on Top*/
 
 @media ( max-width : 768px) {
-main {background-color : coral;
+main {background-color :  rgba(0, 3, 9, 0.1)
+  ;
       width : 100%;
       height: 100%;
       font-size: 0.8rem;
@@ -452,7 +454,7 @@ aside {display: none;
 
 
 @media ( max-width : 480 px) {
-  body {background-color : coral; 
+  body {background-color :  rgba(0, 3, 9, 0.1); 
         width : 100%; 
         height: 100%;
         font-size: 8px; 
@@ -460,7 +462,7 @@ aside {display: none;
   }
   
   h1, h2 {font-size: 10px;
-    }
+  }
 
   aside {display: none;}
   }
