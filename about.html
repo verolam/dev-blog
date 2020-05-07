@@ -41,12 +41,29 @@
 
     </aside>
    
-<main class="main p-t-1 p-b-2">
+<main class="main padding-left padding-right" p-t-1 p-b-2">
   <header>
+
+          <!-- Menu for Mobile
+        -------------------------------->
+        <h1 class="sidenav-title"> Veronique's Blog</h1>
+        <div class="padding">
+        <ul class="sidenav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="posts/posts-list.html">Posts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        </div>
+  
+          <!-- Fin Menu for Mobile
+          -------------------------------->
+
+
+
     <h1>A Little bit more about me...</h1>
   </header>
 
-  <article class="padding-left">
+  <article >
     <p>I am French and I live in Geneva since 2015. 
       During my life I lived in different countries as Spain (1992-1994) and Singapore (2005-2008).     
     </p>
@@ -96,43 +113,43 @@
       </section>   
 
     <h2>My travels</h2>
-    <div class="box-container3">   
+    <div class="box-container3 padding-right">   
 
-    <section class="section-img space-around">
+    <section class="section-img space-around p-t-1 ">
   
       <figure> 
         <img class="flip" src="assets/img/barcelone.jpg" alt="">
-        <figcaption>Spain - Barcelona</figcaption>
+        <figcaption class="padding">Spain - Barcelona</figcaption>
       </figure> 
     
       <figure> 
         <img class="flip" src="assets/img/Japan.jpg" alt="">
-        <figcaption>Japan - Tokyo</figcaption>
+        <figcaption class="padding">Japan - Tokyo</figcaption>
       </figure>
     
       <figure> 
         <img class="flip" src="assets/img/Kosovo.jpg" alt="">
-        <figcaption>Kosovo- Pristina</figcaption>
+        <figcaption class="padding">Kosovo- Pristina</figcaption>
       </figure>
 
       <figure> 
         <img class="flip" src="assets/img/South Korea.jpg" alt="">
-        <figcaption>South Korea - Incheon</figcaption>
+        <figcaption class="padding">South Korea - Incheon</figcaption>
       </figure>
     
       <figure> 
         <img class="flip" src="assets/img/Istanbul.jpg" alt="">
-        <figcaption>Turkey - Istanbul</figcaption>
+        <figcaption class="padding">Turkey - Istanbul</figcaption>
       </figure>
 
       <figure> 
         <img class="flip" src="assets/img/Cuba.jpg" alt="">
-        <figcaption>Cuba - Havana</figcaption>
+        <figcaption class="padding">Cuba - Havana</figcaption>
       </figure>
 
       <figure> 
         <img class="flip" src="assets/img/London.jpg" alt="">
-        <figcaption>UK - London</figcaption>
+        <figcaption class="padding">UK - London</figcaption>
       </figure>
   
     </section>
@@ -146,6 +163,20 @@
 </footer> 
 
 </main>
+<script>
+  //Target 1 element
+    function $(selector) {
+    return document.querySelector(selector);
+    }
+
+    let d = new Date();
+    $("#date").innerHTML = d.toLocaleString(); 
+ 
+
+    $('figure').classList.add('padding'); 
+ 
+</script>
+
 
 </body>
 

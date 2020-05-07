@@ -228,6 +228,8 @@ img.img-head:hover {
   transform: scaleX(-1);
 }
 
+
+
 /* Margins *
 ----------------------------------------------*/
 .m-t-1 {
@@ -278,6 +280,14 @@ img.img-head:hover {
 
 .padding-left {
   padding-left: 50px;
+}
+
+.padding-right {
+  padding-right: 50px;
+}
+
+.padding {
+  padding: 5px 0 20px;
 }
 
 .section-about {
@@ -347,6 +357,7 @@ img.img-head:hover {
 .section-img {
   display: flex;
   flex-wrap: wrap ;
+  
 }
 
 i, a {
@@ -432,6 +443,7 @@ aside {display: none;
           float: none;
           margin-right: auto;
           margin-left: auto;
+       
 }
 
 .mob-hidden {
@@ -458,6 +470,7 @@ aside {display: none;
             float: none;
             margin-right: auto;
             margin-left: auto;
+           
   }
 
   .sidenav-title {display: block;

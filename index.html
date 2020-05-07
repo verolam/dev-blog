@@ -52,18 +52,19 @@
 
 <!-- Main content --> 
 
-  <main class="main p-t-1 p-b-2" >
+  <main class="main  p-t-1 p-b-2" >
     <header>
       
         <!-- Menu for Mobile
         -------------------------------->
       <h1 class="sidenav-title"> Veronique's Blog</h1>
+      <div class="padding">
       <ul class="sidenav">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="posts/posts-list.html">Posts</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
-
+      </div>
         <!-- Fin Menu for Mobile
         -------------------------------->
 
@@ -83,7 +84,7 @@
 
       </header>
 
-        <div class="box-container2 padding-left p-t-1">
+        <div class="box-container2 padding-left padding-right p-t-1">
           <!-- List of my posts -->
           <section class="m-b-2">
             <h2>
@@ -186,10 +187,9 @@
   </div>
 
   <script>
-    var d = new Date();
-   
-    document.getElementById("date").innerHTML =  d.toLocaleString();
-   </script>
+    let d = new Date();
+    document.querySelector("#date").innerHTML = d.toLocaleString(); 
+  </script>
 
 </body>
 
