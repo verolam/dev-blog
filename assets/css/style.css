@@ -122,9 +122,6 @@ cite {
   color: white;
 }
 
-
-
-
 /* LINKS 
 ----------------------------------------------*/
 a {
@@ -382,7 +379,7 @@ i, a {
   text-align : center;
   width: 100%;
   vertical-align: middle; 
-  padding-top: 300px;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 
