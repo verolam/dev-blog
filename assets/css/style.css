@@ -71,7 +71,7 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-h1,h2,h3 {
+h1,h2 {
   text-transform: uppercase;
 }
 
@@ -118,9 +118,9 @@ footer {
 }
 
 cite {
-  font-family: 'Calligraffitti', cursive;
+  font-family: 'Parisienne', cursive;
   font-size : 1.4rem;
-  color: white;
+  color: black;
 }
 
 
