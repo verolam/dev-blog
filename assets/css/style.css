@@ -93,6 +93,7 @@ pre {
   max-width: 800px
 }
 
+
 /* IMAGES
 ----------------------------------------------*/
 img {
@@ -122,6 +123,7 @@ cite {
   color: white;
 }
 
+
 /* LINKS 
 ----------------------------------------------*/
 a {
@@ -145,10 +147,11 @@ input {
 
 
 
+
 /* HELPER CLASSES
 ============================================================*/
 
-/* Typography *
+/* Typography 
 ------------------*/
 .bold {
   font-weight: bold;
@@ -165,7 +168,6 @@ input {
 .figcaption {
    font-size: 1.2rem;
    }
-
 
 
 /* Colors  and fonts
@@ -199,7 +201,7 @@ aside header {
 }
 
 
-/* Images *
+/* Images 
 ----------------------------------------------*/
 
 .img-head {
@@ -234,7 +236,7 @@ img.img-head:hover {
 }
 
 
-/* Margins *
+/* Margins 
 ----------------------------------------------*/
 .m-t-1 {
   margin-top: 1rem;
@@ -265,7 +267,7 @@ img.img-head:hover {
 }
 
 
-/* Paddings *
+/* Paddings 
 ----------------------------------------------*/
 .p-t-1{
   padding-top: 1rem;
@@ -308,7 +310,7 @@ img.img-head:hover {
 }
 
 
-/* Buttons *
+/* Buttons 
 ----------------------------------------------*/
 .button {
   background-color: indigo;
@@ -323,14 +325,14 @@ img.img-head:hover {
 }
 
 
-/* BACKGROUNDS *
+/* BACKGROUNDS 
 ----------------------------------------------*/
 .background{
  background: linear-gradient(90deg, #7e8184, #aeadb5, #bcb7b8 );
 }
 
 
-/* box-containers *
+/* box-containers 
 ----------------------------------------------*/
 
 .box-container {
@@ -387,8 +389,8 @@ i, a {
   justify-content: center;
 }
 
-/* 
-Part for Mobile Menu 
+
+/* Part for Mobile Menu 
 --------------------------------------*/
 
 /*Hide the nav*/
@@ -429,6 +431,8 @@ ul.sidenav li a:hover:not(.active) {
 }
 
 /* End part for Mobile Menu */
+
+
 
 
 /* LAYOUT 
