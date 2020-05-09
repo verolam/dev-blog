@@ -1,230 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Véronique Lamrani</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/style.css">
-    <link rel="stylesheet" href="assets/css/style.css"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Véronique Lamrani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&family=Calligraffitti&display=swap" rel="stylesheet">
 
-  </head>
+  <link rel="stylesheet" href="../assets//icons/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css"> 
+
+</head>
 
 <!-- My HTML page will be divided in 2 parts with flexbox : aside and main -->
 <body>
   <div class="box-container">
-    <aside  id ="#aside" class="background aside">
+  <aside  id ="#aside" class="background aside">
 
-      <header class="p-t-1"> 
-        <h2>Welcome to My blog</h2>
-        <figure class="p-b-2"> 
-          <img src="assets/img/Photo-id.jpg" alt="" class="img-head img-circle">
-          <figcaption class="figcaption"> 
-           <span>Hello, My name is Véronique</span>  
-          </figcaption>
-        </figure>
-      </header>
+    <header class="p-t-1"> 
+      <h2>Welcome to My blog</h2>
+      <figure class="p-b-2"> 
+        <img src="../assets/img/Photo-id.jpg" alt="" class="img-head img-circle">
+        <figcaption class="figcaption"> 
+          Hello, My name is Véronique 
+        </figcaption>
+      </figure>
+    </header>
 
-      <hr class="hr"> 
+    <hr class="hr"> 
     
   
- <!-- Menu with icons in aside
+ <!-- Menu with icons 
 -------------------------------->  
 
-          <div class="p-t-1">     
-            <ul >
-              <li class="li-align">
-                <i class="icon-home icon"></i>
-                <a href="index.html">Home</a>
-              </li>
-              <li class="li-align">
-                <i class="icon-heart icon"></i>
-                <a href="about.html">About me</a>
-              </li>
-              <li class="li-align">
-                <i class="icon-camera icon"></i>
-                <a href="posts/posts-list.html">Posts</a>
-              </li>           
-            </ul>
-          </div>  
+  <div class="p-t-1">     
+    <ul >
+      <li class="li-align">
+        <i class="icon-home icon"></i>
+        <a href="index.html">Home</a>
+      </li>
+      <li class="li-align">
+        <i class="icon-heart icon"></i>
+        <a href="about.html">About me</a>
+      </li>
+      <li class="li-align">
+        <i class="icon-camera icon"></i>
+        <a href="posts-list.html">Posts</a>
+      </li>           
+    </ul>
+  </div>  
       
-      </aside>
-
-<!-- Main content --> 
-
-  <main class="main  p-t-1 p-b-2" >
-    <header>
-      
-        <!-- Menu for Mobile
-        -------------------------------->
-      <h1 class="sidenav-title"> Veronique's Blog</h1>
-      <div class="padding">
-      <ul class="sidenav">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="posts/posts-list.html">Posts</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-      </div>
-        <!-- Fin Menu for Mobile
-        -------------------------------->
-
-        <div class="mob-hidden">
-
-          <span id="date" class="padding-left"></span> 
-          
-          <!-- <button id="btn-bg" class ="button">Click Me :)</button> -->
+  </aside>
 
 
-          <h1>This page will contain my POSTS</h1>
-          <div class="text-center p-t-1" >
-            <h3 >If you want to be aware of new posts:</h3>  
-            <form action="">
-              <input = "text"  id="subscribe" placeholder ="Enter your email">
-              <button " id="button" class ="button" >Subscribe</button>
-            </form>
-          </div>
-        </div>
+<main class="main p-t-1 p-b-2" >
+<header>
+   
+  <!-- Menu for Mobile
+  -------------------------------->
+<h1 class="sidenav-title"> Veronique's Blog</h1>
+<ul class="sidenav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="posts-list.html">Posts</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
 
-      </header>
+  <!-- Fin Menu for Mobile
+  -------------------------------->
+</header>
 
-        <div class="box-container2 padding-left padding-right p-t-1">
-          <!-- List of my posts -->
-          <section class="m-b-2">
-            <h2>
-            <a href="posts/post01-markdown.html">Markdown syntax post</a>
-            </h2>
-            <small>Date of publication : 04/07/2020</small> 
-            <p>Sample article introducing basic Markdown syntax and formatting HTML</p>
-            <a href="posts/post01-markdown.html">Read More</a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-            <a href="posts/post02-Devtools_Flexbox_Fonts_Icons-.html">Post Chrome Dev Tools - FLexbox - Fonts - Icons</a>
-            </h2>
-            <small>Date of publication : 04/16/2020</small> 
-            <p>This article is about different tools and Flexbox, Fonts, Icons....</p>
-            <a href="posts/post02-Devtools_Flexbox_Fonts_Icons-.html">Read More</a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-            <a href="posts/post03-Tool_Inspector.html">Tool Inspector</a>
-            </h2>
-            <small>Date of publication : 04/17/2020</small> 
-            <p>The Tool Inspector</p>
-            <a href="posts/post03-Tool_Inspector.html">Read More</a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-            <a href="posts/post04-VisualCode.html">Visual Code Editor</a>
-            </h2>
-            <small>Date of publication : 04/18/2020</small> 
-            <p>Visual Code Editor </p>
-            <a href="posts/post04-VisualCode.html">Read More </a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-            <a href="posts/post05-Arrays.html">JavaScript Arrays</a>
-            </h2>
-            <small>Date of publication : 04/28/2020</small> 
-            <p>JavaScript Arrays </p>
-            <a href="posts/post05-Arrays.html">Read More </a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-            <a href="posts/post06-Functions.html">JavaScript Functions</a>
-            </h2>
-            <small>Date of publication : 04/28/2020</small> 
-            <p>JavaScript Functions</p>
-            <a href="posts/post06-Functions.html">Read More </a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-             <a href="posts/post07-Conditions.html">JavaScript Conditions</a>
-            </h2>
-            <small>Date of publication : 04/29/2020</small> 
-            <p>JavaScript Conditions</p>
-            <a href="posts/post07-Conditions.html">Read More </a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-             <a href="posts/post08-Loops.html">JavaScript Loops</a>
-            </h2>
-            <small>Date of publication : 05/04/2020</small> 
-            <p>JavaScript Loops</p>
-            <a href="posts/post08-Loops.html">Read More </a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-             <a href="posts/post09-Html_And_Dom.html">HTML and DOM</a>
-            </h2>
-            <small>Date of publication : 05/05/2020</small> 
-            <p>HTML and DOM</p>
-            <a href="posts/post09-Html_And_Dom.html">Read More </a> 
-          </section>
-
-          <section class="m-b-2">
-            <h2>
-             <a href="posts/post10-Format Date.html">Using Date in JS </a>
-            </h2>
-            <small>Date of publication : 05/05/2020</small> 
-            <p>Using Date in JS</p>
-            <a href="posts/post10-Format Date.html">Read More </a> 
-          </section>
-
-        </div>
-
-    <footer class="p-t-2 p-b-2">
-      <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
-    </footer>
-
-  </main>
-
-  </div>
-
-  <script>
-       
-    // Target elt selector
-    function $(selector) {
-    return document.querySelector(selector);
-    }
-
-    //Display date on top-left
-    let d = new Date();
-    $("#date").innerHTML = d.toLocaleString(); 
+<div class="mob-hidden">
+<span id="date" class="padding-left white"></span> 
+</div>
 
 
-    // Target button "subscribe" to get mail
-     
-    $('#button').addEventListener("click", function() {
-      
-    let mail = $('#subscribe').innerHTML ; 
-    alert('request registered');  
-    $('#subscribe').innerHTML = "";
+<div class="padding-left padding-right cite-center">
+  <cite  >
+  <ul > 
+    <li id = "citation" >
+      Appearance blinds, whereas words reveal 
+    </li>
+    <span id="author">Oscar Wilde </span> 
+    <li>    
+     <button id="btn-quote" class="button m-t-2">Another quote?</button>
+    </li>
+  </ul>
+  </cite>
+</div>
 
-    }
-    );
 
-    // // Target button "btn-bg" to change background color
-     
-    // $('#btn-bg').addEventListener("click", function() {
-    
-      
-    // $('#btn-bg').style.backgroundColor = "#ccc";
-  
-    // }
-    // );
 
-    
-  </script>
+<footer class="p-t-2 p-b-2 white">
+  <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+ </footer>
+
+</main>
+
+<script src="assets/js/scripts.js">
+</script>
 
 </body>
-
 </html>
