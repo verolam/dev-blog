@@ -7,5 +7,5 @@ Link to my blog :
 https://verolam.github.io/dev-blog/
 
 
-
+#### Thanks to Sorin Paun.
 
