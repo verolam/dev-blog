@@ -23,7 +23,6 @@ let arrQuote =  [
     author : "Oscar Wilde",
     text   : "Woman begins by resisting a man's advances and ends by blocking his retreat."
   },
-
   {
     author : "Oscar Wilde",
     text: "No man is rich enough to buy back his past."
@@ -31,7 +30,24 @@ let arrQuote =  [
   {
     author : "Confucius",
     text   : "Life is really simple, but we insist on making it complicated."
+  },
+  {
+    author : "Oscar Wilde",
+    text: "The truth is rarely pure and never simple."
+  },
+  {
+    author : "Oscar Wilde",
+    text   : "Never love anyone who treats you like you're ordinary."
+  },
+  {
+    author : "Oscar Wilde",
+    text   : "When the gods wish to punish us, they answer our prayers."
+  },
+  {
+    author : "Oscar Wilde",
+    text   : "Experience is simply the name we give our mistakes."
   }
+
 ];
 
 let i = 0;
