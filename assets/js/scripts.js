@@ -5,8 +5,6 @@ return document.querySelector(selector);
 }
 
 
-
-
 //Display date on top-left
 
 let d = new Date();
@@ -46,8 +44,11 @@ let arrQuote =  [
   {
     author : "Oscar Wilde",
     text   : "Experience is simply the name we give our mistakes."
+  },
+  {
+    author : "George Orwell",
+    text   : "At 50, everyone has the face he deserves."
   }
-
 ];
 
 let i = 0;

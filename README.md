@@ -6,6 +6,8 @@
 Link to my blog :
 https://verolam.github.io/dev-blog/
 
+At the moment it's a static blog :)
 
-#### Thanks to Sorin Paun.
+
+
 

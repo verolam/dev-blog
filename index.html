@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Véronique Lamrani"> 
   <title>Blog de Véronique Lamrani</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400;500&family=Calligraffitti&family=Parisienne&display=swap" rel="stylesheet">
 
@@ -53,49 +54,57 @@
 
 
 <main class="main p-t-1 p-b-2" >
-<header>
-   
-  <!-- Menu for Mobile
-  -------------------------------->
-<h1 class="sidenav-title"> Veronique's Blog</h1>
-<ul class="sidenav">
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="posts-list.html">Posts</a></li>
-  <li><a href="about.html">About</a></li>
-</ul>
+  <header>
+     <!--   Date appears only on index page and not in mobile 
+    ---------------------------------------------------------->   
+    <div class="mob-hidden">
+      <span id="date" class="padding-left white"></span> 
+    </div>
+    
+     <!-- Menu for Mobile
+        -------------------------------->
+        <h1 class="sidenav-title"> Veronique's Blog</h1>
+        <div class="padding">
+        <ul class="sidenav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="posts-list.html">Posts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        </div>
+      <!-- Fin Menu for Mobile
+        -------------------------------->
+        
+    <h1>A Blog for developers and dreamers</h1>
 
-  <!-- Fin Menu for Mobile
-  -------------------------------->
-</header>
-
-<div class="mob-hidden">
-<span id="date" class="padding-left white"></span> 
-</div>
-
-
-<div class="padding-left padding-right cite-center">
-  <cite  >
-  <ul > 
-    <li id = "citation" >
-      Appearance blinds, whereas words reveal 
-    </li>
-    <span id="author">Oscar Wilde </span> 
-    <li>    
-     <button id="btn-quote" class="button m-t-2">Another quote?</button>
-    </li>
-  </ul>
-  </cite>
-</div>
+    </header>
 
 
+    <div class="padding-left padding-right cite-center">
+      <cite  >
+      <ul > 
+        <li id = "citation" >
+          Appearance blinds, whereas words reveal 
+        </li>
+        <span id="author">Oscar Wilde </span> 
+        <li>    
+        <button id="btn-quote" class="button m-t-2">Another quote?</button>
+        </li>
+      </ul>
+      </cite>
+    </div>
 
-<footer class="p-t-2 p-b-2 white">
-  <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
- </footer>
+
+  <footer class="p-t-2 p-b-2 white">
+    <p>&copy; Author Véronique Lamrani - 2020 -  All Rights Reserved.</p>
+  </footer>
 
 </main>
 
-<script src="assets/js/scripts.js">
+
+<!-- Script to display date and list of quotes  
+------------------------------------------------>  
+<script 
+  src="assets/js/scripts.js">
 </script>
 
 </body>
